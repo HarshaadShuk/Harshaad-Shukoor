@@ -3,81 +3,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Fiction Blog</title>
+    <title>Harshaad Shukoor - Academic Portfolio</title>
     <style>
+        /* General Styling */
         body {
-    font-family: 'Times New Roman', serif; /* Choose your desired font */
-    background-color: #f0f0f0; /* Soft background color */
-    margin: 0;
-    padding: 0;
-}
+            scroll-behavior: smooth;
+            font-family: 'Roboto Mono', monospace; 
+            line-height: 1.6;
+            margin: 0;
+            background-color: #121212; /* Dark background */
+            color: #f5f5f5; /* Light text */
+            text-align: center; 
+        }
 
-header {
-    background-color: #333; /* Dark header background */
-    color: white;
-    padding: 1em 0;
-    text-align: center;
-}
+        header {
+            padding: 2em 0;
+        }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            text-shadow: 2px 2px #333; /* Subdued text shadow */
+        }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+        #animated-text {
+            font-weight: bold;
+            font-size: 1.2em;
+            white-space: nowrap; /* Keep text on one line */
+            overflow: hidden; /* Hide overflowing text */
+            animation: typing 3.5s steps(40, end) infinite; /* Typing animation */
+        }
 
-nav a {
-    color: white;
-    text-decoration: none;
-}
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
 
-main {
-    padding: 20px;
-}
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 2em 0;
+        }
 
-.post {
-    background-color: white;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px; /* Slight rounded corners */
-    box-shadow: 2px 2px 5px #888888; /* Subtle shadow effect */
-}
+        nav ul li {
+            display: inline-block;
+            margin: 0 1em;
+        }
 
-footer {
-    text-align: center;
-    padding: 1em 0;
-    background-color: #333;
-    color: white;
-}
-    </style> 
+        a {
+            text-decoration: none;
+            color: #f5f5f5;
+            padding: 0.5em 1em;
+            border-radius: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #333;
+            color: #64ffda; /* Accent color */
+        }
+
+        /* Main Content Styling */
+        section {
+            padding: 3em 2em;
+            margin: 0 auto;
+            max-width: 960px;
+        }
+
+        h2 {
+            color: #64ffda; /* Accent color */
+            font-size: 2em;
+            margin-bottom: 1em;
+            border-bottom: 2px solid #333;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        /* Skills Section */
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skills ul li {
+            margin: 0.5em;
+            padding: 0.8em 1.5em;
+            background-color: #333;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            box-shadow: 2px 2px #111; /* Subdued box shadow */
+        }
+
+        /* Project & Publication Sections */
+        .project, .publication {
+            margin-bottom: 2em;
+            background-color: rgba(255, 255, 255, 0.05); /* Very subtle background */
+            padding: 1.5em;
+            border-radius: 5px;
+        }
+
+        .project h3, .publication h3 {
+            color: #64ffda; 
+        }
+
+        /* Footer Styling */
+        footer {
+            padding: 2em 0;
+            color: #999; 
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Your Fiction World</h1>
+        <h1>Harshaad Shukoor - <span id="animated-text"></span></h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Stories</a></li>
-                <li><a href="#">Poems</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="post">
-            <h2>Story/Poem Title</h2>
-            <p>Your captivating story or poem goes here...</p>
-        </section>
-        
-        </main>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate student of physics and mathematics at IISER Kolkata, driven by a deep curiosity about the universe and its underlying principles. My academic journey has been filled with exciting explorations into the world of science, and I am eager to contribute to the field through research and innovation.
+        </p>
+        <p>
+            Beyond academia, I enjoy engaging in various extracurricular activities such as astronomy club meetings, coding competitions, and volunteering for community science outreach programs. I believe in the power of interdisciplinary collaboration and strive to integrate diverse perspectives into my work.
+        </p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-entry">
+            <h3>Integrated BSMS interdisciplinary sciences</h3>
+            <p><strong>Indian Institute of Science Education and Research (IISER), Kolkata</strong>, Kolkata, India</p>
+            <p>Expected Graduation: May 2028</p>
+        </div>
+        <div class="education-entry">
+            <h3>Higher Secondary Graduation</h3>
+            <p><strong>Government HSS Kollam</strong>, kerala, India</p>
+            <p>Graduated: May 2022</p>
+            <h3>Other Educations</h3>
+            <p><strong>Army Public School Banglore</strong>, Karnataka, India</p>
+            <p><strong>Army Public School Ambala</strong>, Haryana, India</p>
+            <p><strong>Army Public School Gopalpur</strong>, Odisha, India</p>
+            
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Physics</li>
+            <li>Mathematics</li>
+            <li>Scientific Research</li>
+            <li>Data Analysis</li>
+            <li>Problem-Solving</li>
+            <li>Programming (Python, MATLAB)</li>
+            <li>Technical Writing</li>
+            <li>Teamwork</li>
+            <li>Critical Thinking</li>
+            <li>Communication</li>
+            <li>Leadership</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>ADVENTURE AWAITING!!</h3>
+            <p>
+                WAIT TO DELVE INTO THE AMAZING PROJECTS!!
+            </p>
+        </div>
+        <!-- <div class="project">
+            <h3>Analysis of Gravitational Waves</h3>
+            <p>
+                Contributed to a research project analyzing data from gravitational wave detectors to identify and characterize astrophysical events such as black hole mergers and neutron star collisions.
+            </p>
+        </div>
+        <div class="project">
+            <h3>Machine Learning in Particle Physics</h3>
+            <p>
+                Developed machine learning algorithms to analyze large datasets from particle physics experiments, aiding in the discovery of new particles and phenomena.
+            </p>
+        </div> -->
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+        <div class="publication">
+            <h3>COMING SOON !!!</h3>
+            <p>
+                STAY TUNED TO ACCESS THE RESEARCH PAPER!!!
+            </p>
+        </div>
+        <!-- <div class="publication">
+            <h3>Title of Paper 2</h3>
+            <p>
+                Authors: Harshaad Shukoor, Alice Johnson<br>
+                Conference: International Conference on Physics<br>
+                Year: 2023
+            </p>
+        </div> -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Gmail: harshaadshukoor@email.com</p>
+        <p>Linked in: harshaadshukoor@email.com</p>
+    </section>
 
     <footer>
-        <p>© 2023 Your Name</p>
+        <p>© 2023 Harshaad Shukoor</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const targetElement = document.getElementById('animated-text');
+            const textOptions = ["Physics Enthusiast", "Coder", "Problem Solver", "Researcher"];
+            let currentTextIndex = 0;
+            let currentCharacterIndex = 0;
+            let isDeleting = false;
+            let textToDisplay = '';
+            let lastTime = 0;
+    
+            function animateText(timestamp) {
+                if (!lastTime) {
+                    lastTime = timestamp;
+                }
+    
+                const deltaTime = timestamp - lastTime;
+    
+                if (deltaTime > (isDeleting ? 50 : 100)) {
+                    lastTime = timestamp;
+    
+                    if (!isDeleting && currentCharacterIndex <= textOptions[currentTextIndex].length) {
+                        textToDisplay += textOptions[currentTextIndex].charAt(currentCharacterIndex);
+                        currentCharacterIndex++;
+                    } else if (isDeleting && currentCharacterIndex >= 0) {
+                        textToDisplay = textToDisplay.substring(0, textToDisplay.length - 1);
+                        currentCharacterIndex--;
+                    } else {
+                        isDeleting = !isDeleting;
+                        if (!isDeleting) {
+                            currentTextIndex = (currentTextIndex + 1) % textOptions.length;
+                        }
+                    }
+    
+                    targetElement.textContent = textToDisplay;
+                }
+    
+                requestAnimationFrame(animateText);
+            }
+    
+            animateText(0);
+    
+            // Smooth scrolling for navigation links
+            const navLinks = document.querySelectorAll('nav ul li a');
+    
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+    
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    const offsetTop = targetSection.offsetTop;
+    
+                    window.scroll({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+    
+    
 </body>
 </html>
-
